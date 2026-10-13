@@ -1,0 +1,66 @@
+/* Made by U2derscore */ 
+/* Made by U2derscore */ 
+.gcfy-btn {
+  flex: none;
+  align-self: center;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #0f0f0f;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+html[dark] .gcfy-btn {
+  color: #f1f1f1;
+}
+
+.gcfy-btn::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: currentColor;
+  -webkit-mask: url("../icons/icon.svg") center / contain no-repeat;
+  mask: url("../icons/icon.svg") center / contain no-repeat;
+}
+
+.gcfy-btn:hover,
+.gcfy-btn[aria-expanded="true"] {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+html[dark] .gcfy-btn:hover,
+html[dark] .gcfy-btn[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.gcfy-btn:focus-visible {
+  outline: 2px solid #065fd4;
+  outline-offset: 2px;
+}
+
+html[dark] .gcfy-btn:focus-visible {
+  outline-color: #3ea6ff;
+}
+
+.gcfy-inline {
+  display: block;
+  width: auto;
+  max-width: min(100%, 360px);
+  max-height: 360px;
+  margin: 8px 0 4px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  object-fit: contain;
+}
+
+html[dark] .gcfy-inline {
+  background: rgba(255, 255, 255, 0.1);
+}
